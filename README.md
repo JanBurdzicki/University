@@ -20,7 +20,8 @@
 * [Seminarium: Analiza problemów algorytmicznych]():
 	* seminarium: Paweł Gawrychowski
 * [Metody Implementacji Algorytmów]():
-	*
+	* ćwiczenia: Krzysztof Loryś
+	* seminarium: Artur Kraska, Bartłomiej Dudek, Wojciech Janczewski
 
 
 ## Semester 2 (Summer 2022/2023)
@@ -36,10 +37,14 @@
     * wykład: Krystian Bacławski
     * ćwiczenia: Artur Kraska
 * [An Introduction to Finite and Classical Model Theory]():
+	* wykład: Bartosz Bednarczyk
+	* ćwiczenia: Vincent Michielini
 * [Usługi finansowe]():
-	*
+	* wykład: Edyta Rutkowska-Tomaszewska
+	* ćwiczenia: Magdalena Paleczna-Sareńcza
 * [Wstęp do bezpieczeństwa komputerowego]():
-	*
+	* wykład: Filip Zagórski
+	* ćwiczenia: Filip Zagórski
 * [Wychowanie Fizyczne - Aikido]():
 	*
 
@@ -49,22 +54,30 @@
 ## Semester 3 (Winter 2023/2024)
 
 * [Analiza numeryczna]():
-    * wykład:
-    * ćwiczenia:
-    * pracownia:
+    * wykład: Paweł Woźny
+    * ćwiczenia: Paweł Woźny
+    <!-- * repetytorium: Witold Karczewski -->
 * [Matematyka dyskretna (M)]():
     * wykład: Grzegorz Stachowiak
     * ćwiczenia: Dudek
 * [Systemy operacyjne]():
     * wykład: Krystian Bacławski
-    * ćwiczenio-pracownia: Tomasz Wierzbicki
+    * ćwiczenia: Tomasz Wierzbicki
+    * pracownia: Piotr Witkowski
+    <!-- * repetytorium: Piotr Polesiuk -->
 * [Kurs: Wybrane elementy praktyki projektowania oprogramowania]():
     * wykład: Wiktor Zychla
     * pracownia: Adam Gańczorz
 * [Introduction to cloud computing]():
+	* pracownia: Piotr Wieczorek
 * [Kurs: Kryptoanaliza stosowana]():
+	* wykład: Tomasz Wierzbicki
+	* pracownia: Tomasz Wierzbicki
 * [Metody Implementacji Algorytmów]():
+	* ćwiczenia: Krzysztof Loryś
+	* seminarium: Artur Kraska, Bartłomiej Dudek, Wojciech Janczewski
 * [Wychowanie fizyczne - Squash]():
+	*
 
 
 ## Semester 4 (Summer 2023/2024)
@@ -80,9 +93,10 @@
     * wykład: Piotr Wieczorek
     * ćwiczenio-pracownia: Małgorzata Biernacka
 * [Sztuczna inteligencja]():
-	*
+	* wykład: Paweł Rychlikowski
+	* ćwiczenio-pracownia: Paweł Rychlikowski
 * [Seminarium: Algorytmy numeryczne i graficzne]():
-	*
+	* seminarium: Paweł Woźny
 * [Wychowanie Fizyczne - Pływanie]():
 	*
 * [Wychowanie Fizyczne - Sekcja wioślarska]():
@@ -92,15 +106,15 @@
 ## Semester 5 (Winter 2024/2025)
 
 * [Machine Learning]():
-	*
-	*
+	* wykład: Marek Adamczyk
+	* ćwiczenia: Klaudia Balcer
 * [Podstawy i zastosowania złożoności obliczeniowej]():
     * wykład: Jakub Michaliszyn
     * ćwiczenia: Jakub Michaliszyn
 * [Modele Językowe]():
-	*
-	*
+	* wykład: Paweł Rychlikowski
+	* ćwiczenia: Marek Adamczyk
 * [Proseminarium: Agile Software Development]():
-	*
+	* seminarium: Kamil Matuszewski
 * [Elementy teorii argumentacji]():
-
+	*
