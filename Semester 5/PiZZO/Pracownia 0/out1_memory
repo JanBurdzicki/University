@@ -1,0 +1,30 @@
+Filename: pizzo0.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    54   47.027 MiB   47.027 MiB           1   @profile
+    55                                         def main():
+    56   47.027 MiB    0.000 MiB           1   	filename = sys.stdin.readline()[:-1]
+    57                                         
+    58   47.027 MiB    0.000 MiB           1   	try:
+    59   47.027 MiB    0.000 MiB           1   		automaton = Automaton(filename)
+    60                                         	except:
+    61                                         		print('Invalid automaton description!')
+    62                                         		exit()
+    63                                         
+    64   47.027 MiB    0.000 MiB           1   	state = automaton.initial_state
+    65                                         
+    66                                         	# print(automaton)
+    67                                         
+    68   47.027 MiB    0.000 MiB       50632   	while char := sys.stdin.read(1):
+    69   47.027 MiB    0.000 MiB       50631   		if char == '\n':
+    70   47.027 MiB    0.000 MiB         100   			if state.is_accepting:
+    71   47.027 MiB    0.000 MiB         100   				print('yes')
+    72                                         			else:
+    73                                         				print('no')
+    74                                         
+    75   47.027 MiB    0.000 MiB         100   			state = automaton.initial_state
+    76                                         		else:
+    77   47.027 MiB    0.000 MiB       50531   			state = state.update(char)
+
+

@@ -1,0 +1,130 @@
+no
+no
+no
+no
+yes
+yes
+no
+no
+yes
+yes
+no
+yes
+no
+no
+yes
+yes
+no
+no
+yes
+yes
+yes
+yes
+yes
+yes
+no
+no
+no
+yes
+no
+yes
+no
+no
+no
+yes
+yes
+yes
+no
+no
+yes
+no
+no
+no
+no
+no
+yes
+yes
+yes
+no
+no
+yes
+no
+no
+yes
+yes
+yes
+yes
+no
+no
+no
+no
+no
+no
+yes
+yes
+no
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+no
+yes
+yes
+yes
+yes
+no
+no
+yes
+no
+no
+no
+yes
+no
+no
+no
+no
+no
+yes
+yes
+no
+yes
+no
+yes
+yes
+yes
+no
+yes
+no
+Filename: pizzo0.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    54   46.129 MiB   46.129 MiB           1   @profile
+    55                                         def main():
+    56   46.129 MiB    0.000 MiB           1   	filename = sys.stdin.readline()[:-1]
+    57                                         
+    58   46.129 MiB    0.000 MiB           1   	try:
+    59   46.129 MiB    0.000 MiB           1   		automaton = Automaton(filename)
+    60                                         	except:
+    61                                         		print('Invalid automaton description!')
+    62                                         		exit()
+    63                                         
+    64   46.129 MiB    0.000 MiB           1   	state = automaton.initial_state
+    65                                         
+    66                                         	# print(automaton)
+    67                                         
+    68   46.129 MiB    0.000 MiB       51039   	while char := sys.stdin.read(1):
+    69   46.129 MiB    0.000 MiB       51038   		if char == '\n':
+    70   46.129 MiB    0.000 MiB         100   			if state.is_accepting:
+    71   46.129 MiB    0.000 MiB          49   				print('yes')
+    72                                         			else:
+    73   46.129 MiB    0.000 MiB          51   				print('no')
+    74                                         
+    75   46.129 MiB    0.000 MiB         100   			state = automaton.initial_state
+    76                                         		else:
+    77   46.129 MiB    0.000 MiB       50938   			state = state.update(char)
+
+
