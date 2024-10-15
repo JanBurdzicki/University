@@ -46,7 +46,7 @@
 	* wykład: Filip Zagórski
 	* ćwiczenia: Filip Zagórski
 * [Wychowanie Fizyczne - Aikido]():
-	*
+	* wf: Renata Bohdanowicz
 
 <!-- Język angielski B2-II Lektorat -->
 
@@ -77,7 +77,7 @@
 	* ćwiczenia: Krzysztof Loryś
 	* seminarium: Artur Kraska, Bartłomiej Dudek, Wojciech Janczewski
 * [Wychowanie fizyczne - Squash]():
-	*
+	* wf: Małgorzata Janiaczyk
 
 
 ## Semester 4 (Summer 2023/2024)
@@ -98,9 +98,11 @@
 * [Seminarium: Algorytmy numeryczne i graficzne]():
 	* seminarium: Paweł Woźny
 * [Wychowanie Fizyczne - Pływanie]():
-	*
+	* wf: Andrzej Mulka
 * [Wychowanie Fizyczne - Sekcja wioślarska]():
-	*
+	* wf: Andrzej Mulka
+* [Wychowanie Fizyczne - Sekcja badmintona]():
+	* wf: Małgorzata Janiaczyk
 
 
 ## Semester 5 (Winter 2024/2025)
