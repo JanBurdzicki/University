@@ -117,4 +117,4 @@
 * [Proseminarium: Agile Software Development]():
 	* seminarium: Kamil Matuszewski
 * [Elementy teorii argumentacji]():
-	*
+	* wykład: Marcin Selinger
