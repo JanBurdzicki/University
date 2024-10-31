@@ -27,8 +27,8 @@
 ## Semester 2 (Summer 2022/2023)
 
 * [Metody programowania]():
-    * wykład: Marek Materzok
-    * ćwiczenio-pracownia:
+    * wykład: Marek Materzok, Piotr Polesiuk, Dariusz Biernacki
+    * ćwiczenio-pracownia: Dariusz Biernacki
 * [Algebra]():
     * wykład: Artur Jeż
     * ćwiczenia: Paweł Laskoś-Grabowski
