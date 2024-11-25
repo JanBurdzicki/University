@@ -1,0 +1,70 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[polish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[left = 1.5cm, right = 1.5cm, top = 1.75cm, bottom = 1.75cm]{geometry}
+
+\title{\textbf{PIZZO – Zadanie 2}}
+\author{Jan Burdzicki, 339592}
+\date{22.11.2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Treść zadania}
+
+Dla programu $X$, który bierze dwie liczby naturalne, coś liczy i zwraca 0 lub 1 (nigdy się nie zapętla), przez $P_X$ oznaczamy problem decyzyjny taki, że $P_X(n)=1$ jeśli istnieje $m$ takie, że $X(n, m)=1$, oraz $P_X(n)=0$ w przeciwnym przypadku. Czy istnieje $X$ taki, że $P_X$ jest nierozstrzygalny?
+
+\section{Rozwiązanie}
+
+Pokażemy przykład programu $X$ takiego, że $P_X$ będzie nierozstrzygalny.
+
+\noindent
+Niech $X(n, m)$ będzie programem, który przyjmuje jako argumenty 2 liczby naturalne:
+\begin{itemize}
+	\item $n$ – numer programu (mamy ponumerowane programy kolejnymi liczbami naturalnymi)
+	\item $m$ – ograniczenie na liczbę wykonanych operacji na maszynie Turinga
+\end{itemize}
+
+\noindent
+Będziemy uruchamiać $n$-ty program, wykonując jego $m$ kolejnych operacji.
+
+\[
+X(n, m) =
+\begin{cases}
+1, & \text{gdy program numer } n \text{ zakończy się po wykonaniu} \le m \text{ operacji}, \\
+0, & \text{w p.p.}
+\end{cases}
+\]
+
+\noindent
+Zatem program $X$ spełnia w oczywisty sposób założenia z zadania, czyli:
+\begin{itemize}
+	\item wejście: 2 liczby naturalne
+	\item wyjście: 0 lub 1
+	\item nigdy się nie zapętla
+\end{itemize}
+
+\noindent
+$P_X(n)$ rozumiemy następująco:
+\[
+P_X(n) =
+\begin{cases}
+1, & \text{gdy istnieje } m \text{ takie, że program numer } n \text{ zatrzymuje się po} \le m \text{ operacjach}, \\
+0, & \text{w p.p.}
+\end{cases}
+\]
+
+\noindent
+Załóżmy nie wprost, że $P_X(n)$ jest rozstrzygalny.
+Wtedy dla dowolnego $n$ bylibyśmy w stanie sprawdzić, czy $n$-ty program kiedykolwiek się zatrzyma ($P_X(n) = 1$) lub czy zajdzie zdarzenie przeciwne ($P_X(n) = 0$). Zatem $P_X(n)$ rozstrzygałby problem STOPu. Sprzeczność (problem STOPu jest nierozstrzygalny).
+
+\bigskip
+
+\noindent
+Zatem $P_X(n)$ jest nierozstrzygalny.
+
+\end{document}
