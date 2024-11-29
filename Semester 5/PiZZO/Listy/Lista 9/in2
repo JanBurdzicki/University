@@ -1,0 +1,31 @@
+(declare-const p_a_s Bool)
+(declare-const q_a_s Bool)
+(declare-const p_a_t Bool)
+(declare-const q_a_t Bool)
+
+(define-fun Spelnialnosc_a () Bool
+    (and (and (or p_a_s q_a_s) (or (not p_a_s) (not q_a_s))) (or p_a_s (not q_a_s))))
+
+(define-fun Tautologia_a () Bool
+    (and (and (or p_a_t q_a_t) (or (not p_a_t) (not q_a_t))) (or p_a_t (not q_a_t))))
+
+(assert Spelnialnosc_a)
+(assert (not Tautologia_a))
+
+
+(declare-const p_b_s Bool)
+(declare-const q_b_s Bool)
+(declare-const p_b_t Bool)
+(declare-const q_b_t Bool)
+
+(define-fun Spelnialnosc_b () Bool
+    (and (and (and (or p_b_s q_b_s) (=> p_b_s q_b_s)) (=> q_b_s p_b_s)) (or (not p_b_s) (not q_b_s))))
+
+(define-fun Tautologia_b () Bool
+    (and (and (and (or p_b_t q_b_t) (=> p_b_t q_b_t)) (=> q_b_t p_b_t)) (or (not p_b_t) (not q_b_t))))
+
+(assert Spelnialnosc_b)
+(assert (not Tautologia_b))
+
+(check-sat)
+(get-model)

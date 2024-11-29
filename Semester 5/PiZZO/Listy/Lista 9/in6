@@ -1,0 +1,26 @@
+(declare-const p_a Bool)
+(declare-const q_a Bool)
+
+(define-fun Spelnialnosc_a () Bool
+    (and (and (or p_a q_a) (or (not p_a) (not q_a))) (or p_a (not q_a))))
+
+(define-fun Warunek_wartosciowania_a () Bool
+	(and (and (xor p_a q_a) (xor (not p_a) (not q_a))) (xor p_a (not q_a))))
+
+; (assert Spelnialnosc_a)
+; (assert Warunek_wartosciowania_a)
+
+(declare-const p_b Bool)
+(declare-const q_b Bool)
+
+(define-fun Spelnialnosc_b () Bool
+    (and (and (and (or p_b q_b) (=> p_b q_b)) (=> q_b p_b)) (or (not p_b) (not q_b))))
+
+(define-fun Warunek_wartosciowania_b () Bool
+    (and (and (and (xor p_b q_b) (xor p_b q_b)) (xor q_b p_b)) (xor (not p_b) (not q_b))))
+
+;; (assert Spelnialnosc_b)
+(assert Warunek_wartosciowania_b)
+
+(check-sat)
+(get-model)
