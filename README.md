@@ -120,3 +120,5 @@
 	* seminarium: Kamil Matuszewski
 * [Elementy teorii argumentacji]():
 	* wykład: Marcin Selinger
+* [Seminar: Generative AI (wolny słuchacz)]():
+	* seminarium: Rafał Nowak
