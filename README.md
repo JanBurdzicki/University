@@ -120,5 +120,27 @@
 	* seminarium: Kamil Matuszewski
 * [Elementy teorii argumentacji]():
 	* wykład: Marcin Selinger
-* [Seminar: Generative AI (wolny słuchacz)]():
+* [Seminar: Generative AI]():
 	* seminarium: Rafał Nowak
+
+
+## Semester 4 (Summer 2023/2024)
+
+* [Neural Networks. Theory and Practice.]():
+    * wykład: Rafał Nowak
+    * pracownia: Mikołaj Słupiński
+* [Programowanie obiektowe]():
+    * wykład: Marcin Młotkowski
+    * ćwiczenio-pracownia: Marcin Młotkowski
+* [Kurs języka C++]():
+    * wykład: Paweł Rzechonek
+    * pracownia:  Paweł Rzechonek
+* [Project: eXplainable Artificial Intelligence]():
+	* ćwiczenio-pracownia: Klaudia Balcer
+* [Projekt: Deep Learning]():
+	* pracownia: Rafał Nowak
+* [Półkurs języka Prolog]():
+    * wykład: Tomasz Wierzbicki
+    * pracownia: Tomasz Wierzbicki
+<!-- * [Wychowanie Fizyczne - Sekcja wioślarska](): -->
+	<!-- * wf: Andrzej Mulka -->
