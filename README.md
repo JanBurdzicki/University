@@ -142,5 +142,5 @@
 * [Półkurs języka Prolog]():
     * wykład: Tomasz Wierzbicki
     * pracownia: Tomasz Wierzbicki
-<!-- * [Wychowanie Fizyczne - Sekcja wioślarska](): -->
-	<!-- * wf: Andrzej Mulka -->
+<!-- * [Wychowanie Fizyczne - Sekcja wioślarska]():
+    * wf: Andrzej Mulka -->
