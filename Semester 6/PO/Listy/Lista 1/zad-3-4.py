@@ -1,3 +1,7 @@
+# Jan Burdzicki
+# List: 1
+# Task: 3, 4
+
 class LinkedList:
     """Class representing a singly linked list."""
 

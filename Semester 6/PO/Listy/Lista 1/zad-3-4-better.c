@@ -1,3 +1,7 @@
+// Jan Burdzicki
+// List: 1
+// Task: 3, 4
+
 #include <stdio.h>
 #include <stdlib.h>
 

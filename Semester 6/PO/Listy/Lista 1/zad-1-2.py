@@ -1,3 +1,7 @@
+# Jan Burdzicki
+# List: 1
+# Task: 1, 2
+
 class MathUtils:
     """Class containing mathematical utility functions."""
 
