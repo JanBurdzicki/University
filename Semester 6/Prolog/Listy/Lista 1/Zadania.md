@@ -1,6 +1,6 @@
 # Lista 1
 
-Zadania: 1 (DONE, ale nie do końca), 2 (DONE, TODO: używam więcej predykatów), 3, 4 (DONE), 5 (TODO: SLD), 6 (DONE), 7 (DONE), 8 (DONE), 9 (DONE), 10 (DONE), 11, 12 (TODO: bez tablic)
+Zadania: 1 (DONE, ale nie do końca), 2 (DONE, TODO: używam więcej predykatów), 3 (DONE), 4 (DONE), 5 (DONE), 6 (DONE), 7 (DONE), 8 (DONE), 9 (DONE), 10 (DONE), 11 (DONE), 12 (TODO: bez tablic)
 
 TODO: znaleźć/zrobić toola -> draw SLD Tree prolog
 https://arxiv.org/pdf/2001.08133
@@ -54,9 +54,15 @@ Klauzule:
 
 ## Zadanie 3
 
-% Brakujące założenia:
-% - Wszystkie smoki to zwierzęta.
-% - Żadne zwierzę nie jest smokiem.
+```
+nmwz(S) :- szczęśliwy(S), smok(S)
+bottom :- smok(S), szczęśliwy(S), nmwz(S)
+```
+
+Brakujące założenia:
+* "Wszystkie smoki to zwierzęta."
+* "Ktokolwiek odwiedza ZOO." (TWi)
+* "Wszystkie smoki są szczęśliwe." (Moje, ale obejście)
 
 
 ## Zadanie 4
@@ -65,13 +71,21 @@ Klauzule:
 
 ## Zadanie 5
 
-% ?- descendant(john, mark)
-% ?- descendant(X, adam)
-% ?- sister(X, ivonne)
+A\=B :- \+ A=B
+
+sibling TODO: jedno jest ojcem, a drugie kobieta
+można jeszcze rozważać braci/siostry przyrodnie
+
+Jeśli nie ma odcięć, to ; działa jak poniżej. Dlatego nie warto używać ;, tylko powielamy linię
+```
+G1; _G2 :- G1.
+_G1; G2 :- G2.
+```
+
+% ?- descendant(john, mark).
+% ?- descendant(X, adam).
+% ?- sister(X, ivonne).
 % ?- setof((X, Y), cousin(X, Y), List).
-
-TODO: Narysuj prologowe drzewa poszukiwań dla powyższych zapytań.
-
 
 ## Zadanie 6
 
@@ -132,7 +146,7 @@ add_to_list(X, [a, b, c], [a, b, c, d, e]).
 
 ## Zadanie 11
 
-
+% ?- s1(A, B, C, D, E, F), s2(A, B, C, D, E, F), s3(A, B, C, D, E, F), s4(A, B, C, D, E, F), s5(A, B, C, D, E, F), s6(A, B, C, D, E, F).
 
 ## Zadanie 12
 
