@@ -2,9 +2,9 @@
 #include <vector>
 #include <string>
 #include <cstdlib>
+#include <cmath>
 #include <stdexcept>
 
-// TODO: make it faster
 std::vector<int64_t> factorize(int64_t n) {
     std::vector<int64_t> prime_factors;
 
@@ -13,8 +13,9 @@ std::vector<int64_t> factorize(int64_t n) {
     }
 
     if(n < 0) {
+        // in order not to exceed the range of long long,
+        // we keep negative value of n instead of multiplying by -1
         prime_factors.push_back(-1);
-        n *= -1;
     }
 
     while(n % 2 == 0) {
@@ -22,15 +23,19 @@ std::vector<int64_t> factorize(int64_t n) {
         n /= 2;
     }
 
-    for(int64_t i = 3; i * i <= n; i += 2) {
+    // in order not to exceed the range of long long,
+    // we use sqrt() instead of i * i
+    int64_t sqrt_value = std::abs(sqrt(n));
+
+    for(int64_t i = 3; i <= sqrt_value; i += 2) {
         while(n % i == 0) {
             prime_factors.push_back(i);
             n /= i;
         }
     }
 
-    if(n > 1) {
-        prime_factors.push_back(n);
+    if(n != 1 && n != -1) {
+        prime_factors.push_back(std::abs(n));
     }
 
     return prime_factors;
@@ -65,8 +70,6 @@ int main(int argc, char* argv[]) {
             std::cerr << "Out of range error: " << argv[i] << " is too large for int64_t." << std::endl;
             continue;
         }
-
-        // catch()
     }
 
     return 0;
