@@ -25,7 +25,7 @@ std::vector<int64_t> factorize(int64_t n) {
 
     // in order not to exceed the range of long long,
     // we use sqrt() instead of i * i
-    int64_t sqrt_value = std::abs(sqrt(n));
+    int64_t sqrt_value = std::abs(std::sqrt(n));
 
     for(int64_t i = 3; i <= sqrt_value; i += 2) {
         while(n % i == 0) {

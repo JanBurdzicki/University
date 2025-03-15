@@ -14,3 +14,10 @@ iperm([], [], []).
 iperm([H | T], P, [_ | Bound]) :-
     iperm(T, P1, Bound),
     insert(H, P1, P).
+
+perm([], [], []).
+perm([H|T], [_|R], S) :-
+    perm(T, R, S1),
+    select(H, S, S1).
+
+perm(T, S) :- perm(T, S, S).

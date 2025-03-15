@@ -1,24 +1,15 @@
-next([]).
-next([0 | X]) :-
-    next(X).
-next([1 | X]) :-
-    next(X).
-
-list([]).
-list([_ | T]) :-
-    list(T).
-
-bin([0]).
-bin([1 | X]) :-
-    list(X),
-    next(X).
+next([1]).
+next([C | X]) :-
+    next(X),
+    (C = 0; C = 1).
 
 rbin([0]).
-rbin(X) :-
-    rbin(Y),
-    incremented(X, Y).
+rbin(X) :- next(X).
 
-incremented([1], []).
-incremented([1 | T], [0 | T]).
-incremented([0 | T0], [1 | T1]) :-
-    incremented(T0, T1).
+bin([0]).
+bin([1|T]) :- bin(T, []).
+
+bin(A, A).
+bin(X, A) :-
+    bin(X, [C|A]),
+    (C = 0; C = 1).
